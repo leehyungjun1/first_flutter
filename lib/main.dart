@@ -2,9 +2,19 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Text('Hello Code Factory'),
+        body: SizedBox(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text('Code'),
+              Text('Factory'),
+            ],
+          ),
+        ),
       ),
     ),
   );
